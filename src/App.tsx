@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion, useMotionValue } from 'framer-motion'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
-export default function App() {
+export default function Component() {
   const [isLoading, setIsLoading] = useState(true)
   const cursorX = useMotionValue(-100)
   const cursorY = useMotionValue(-100)
@@ -38,7 +38,7 @@ export default function App() {
   const tabContent = {
     'what-i-do': 'I specialize in building scalable web applications using modern technologies. My expertise includes front-end development with React and HTML, back-end development with Node.js and Python, and database management with MongoDB and PostgreSQL. I also have experience with cloud services like AWS and containerization with Docker.',
     'projects': 'My portfolio includes a diverse range of projects, from full-stack web applications to mobile apps and AI-powered tools. Check out my Projects section to see detailed case studies of my work, including technologies used and challenges overcome.',
-    'hire-me': "I am available for most work and open to small commissions. Whether you need a custom web application, a mobile app, Im here to help bring your ideas to life. Let&apos;s discuss how we can work together to achieve your goals."
+    'hire-me': "I'm available for most work and open to small commissions. Whether you need a custom web application, a mobile app, I'm here to help bring your ideas to life. Let's discuss how we can work together to achieve your goals."
   }
 
   const fadeInUp = {
@@ -61,7 +61,7 @@ export default function App() {
   }
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen relative">
       {isLoading ? (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black"
@@ -93,7 +93,7 @@ export default function App() {
               </div>
             </nav>
           </header>
-          <main className="pt-16">
+          <main className="pt-16 pb-24">
             <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="container mx-auto px-6 py-16">
               {/* Home Section */}
               <section id="home" className="min-h-screen flex items-center">
@@ -104,7 +104,7 @@ export default function App() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    Hi, I&apos;m <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">Prisum</span>
+                    Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">Prisum</span>
                   </motion.h1>
                   <motion.p 
                     className="text-xl mb-8 max-w-2xl"
@@ -161,10 +161,6 @@ export default function App() {
                     viewport={{ once: true }}
                   >
                     <img src="https://rockethosting.vercel.app/static/p.png" alt="Prisum" width={400} height={400} className="rounded-lg shadow-lg mb-6" />
-                    <div className="flex space-x-4 justify-center">
-                      <motion.a href="https://github.com/PrisumDevolopes" className="text-blue-400 hover:text-blue-300 transition-colors" whileHover={{ scale: 1.2 }}><FaGithub size={24} /></motion.a>
-                      <motion.a href="x.com/PrisumDevelopes" className="text-blue-400 hover:text-blue-300 transition-colors" whileHover={{ scale: 1.2 }}><FaTwitter size={24} /></motion.a>
-                    </div>
                   </motion.div>
                   <div>
                     <motion.p 
@@ -174,7 +170,7 @@ export default function App() {
                       transition={{ duration: 0.8 }}
                       viewport={{ once: true }}
                     >
-                      Hi, I&apos;m Prisum, a passionate full-stack developer with over 2 years of experience in creating web and mobile applications. I specialize in React, Node.js, and cloud technologies, with a keen interest in AI and machine learning applications in web development.
+                      Hi, I'm Prisum, a passionate full-stack developer with over 2 years of experience in creating web and mobile applications. I specialize in React, Node.js, and cloud technologies, with a keen interest in AI and machine learning applications in web development.
                     </motion.p>
                     <motion.p 
                       className="text-lg mb-6"
@@ -183,7 +179,7 @@ export default function App() {
                       transition={{ duration: 0.8, delay: 0.2 }}
                       viewport={{ once: true }}
                     >
-                      My journey in tech started when I built my first website at the age of 10. Since then, I&apos;ve been constantly learning and exploring new technologies to improve my skills and create better solutions. I&apos;m driven by the desire to solve complex problems and create intuitive, user-friendly applications that make a positive impact.
+                      My journey in tech started when I built my first website at the age of 10. Since then, I've been constantly learning and exploring new technologies to improve my skills and create better solutions. I'm driven by the desire to solve complex problems and create intuitive, user-friendly applications that make a positive impact.
                     </motion.p>
                     <motion.h3 
                       className="text-2xl font-bold mb-4"
@@ -275,10 +271,9 @@ export default function App() {
                 </motion.h2>
                 <div className="space-y-8">
                   {[
-                    
                     { title: "The Future of Web Development: Trends to Watch in 2024", date: "July 15, 2024", excerpt: "Explore emerging technologies and methodologies that are shaping the future of web development...", tags: ["Web Development", "Trends"] },
-                    { title: "Optimizing React Applications for Performance", date: "July 1, 2024", excerpt: "Learn advanced techniques to boost the performance of your React applications...", tags: ["React", "Performance"] },
-                    { title: "Introduction to Serverless Architecture", date: "June 15, 2024", excerpt: "Discover the benefits and use cases of serverless architecture in modern application development...", tags: ["Serverless", "Cloud Computing"] }
+                    { title: "Optimizing React Applications for Performance", date: "July 1, 2024", excerpt: "Learn  advanced techniques to boost the performance of your React applications...", tags: ["React", "Performance"] },
+                    { title: "Introduction to  Serverless Architecture", date: "June 15, 2024", excerpt: "Discover the benefits and use cases of serverless architecture in modern application development...", tags: ["Serverless", "Cloud Computing"] }
                   ].map((article, index) => (
                     <motion.div 
                       key={index} 
@@ -330,7 +325,7 @@ export default function App() {
                     viewport={{ once: true }}
                   >
                     <p className="text-lg mb-6">
-                      I&apos;m always open to new opportunities, collaborations, or just a friendly chat about tech. Feel free to reach out to me using the form or through my social media channels.
+                      I'm always open to new opportunities, collaborations, or just a friendly chat about tech. Feel free to reach out to me using the form or through my social media channels.
                     </p>
                     <div className="space-y-4 mb-8">
                       <div className="flex items-center">
@@ -417,6 +412,39 @@ export default function App() {
           <footer className="container mx-auto px-6 py-8 text-center text-gray-400">
             © {new Date().getFullYear()} Prisum. All rights reserved.
           </footer>
+
+          {/* Centered glowing bar */}
+          <motion.div
+            className="fixed inset-x-0 bottom-0 flex justify-center items-center py-4"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <motion.div
+              className="bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-full px-6 py-3 flex items-center space-x-6 shadow-lg"
+              whileHover={{ scale: 1.05 }}
+            >
+              {[
+                { icon: FaGithub, href: "https://github.com/PrisumDevolopes" },
+                { icon: FaTwitter, href: "https://twitter.com/PrisumDevelopes" },
+                { icon: FaLinkedin, href: "#" },
+                { icon: FaEnvelope, href: "mailto:prisum@rockethosting.xyz" }
+              ].map((item, index) => (
+                <motion.a
+                  key={index}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  whileHover={{ scale: 1.2, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <item.icon size={24} />
+                </motion.a>
+              ))}
+            </motion.div>
+          </motion.div>
+
           <motion.div
             className="fixed top-0 left-0 w-4 h-4 rounded-full bg-white mix-blend-difference pointer-events-none z-50"
             style={{
