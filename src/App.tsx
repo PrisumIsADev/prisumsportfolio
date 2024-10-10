@@ -424,7 +424,7 @@ export default function Component() {
             <motion.div
               className="bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-full px-6 py-3 flex items-center space-x-6 shadow-lg"
               whileHover={{ scale: 1.05 }}
-              style={{ boxShadow: '0 0 100px rgba(33, 33, 33, 0.8)' }} // Custom glow effect
+              style={{ boxShadow: '0 0 30px 10px rgba(33, 33, 33, 0.8)' }} // Custom glow effect
             >
               {[
                 { icon: FaGithub, href: "https://github.com/PrisumDevolopes" },
