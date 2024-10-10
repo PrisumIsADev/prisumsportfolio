@@ -36,9 +36,9 @@ export default function App() {
   }
 
   const tabContent = {
-    'what-i-do': 'I specialize in building robust and scalable web applications using modern technologies. My expertise includes front-end development with React, back-end development with Node.js, and database management with MongoDB and PostgreSQL. I also have experience with cloud services like AWS and containerization with Docker.',
+    'what-i-do': 'I specialize in building scalable web applications using modern technologies. My expertise includes front-end development with React and HTML, back-end development with Node.js and Python, and database management with MongoDB and PostgreSQL. I also have experience with cloud services like AWS and containerization with Docker.',
     'projects': 'My portfolio includes a diverse range of projects, from full-stack web applications to mobile apps and AI-powered tools. Check out my Projects section to see detailed case studies of my work, including technologies used and challenges overcome.',
-    'hire-me': "I&apos;m available for freelance work and open to full-time opportunities. Whether you need a custom web application, a mobile app, or technical consultation, I&apos;m here to help bring your ideas to life. Let&apos;s discuss how we can work together to achieve your goals."
+    'hire-me': "I&apos;m available for most work and open to small commissions. Whether you need a custom web application, a mobile app, I&apos;m here to help bring your ideas to life. Let&apos;s discuss how we can work together to achieve your goals."
   }
 
   const fadeInUp = {
@@ -51,7 +51,7 @@ export default function App() {
     setIsSubmitting(true)
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000))
-    setSubmitMessage("Thank you for your message. I&apos;ll get back to you soon!")
+    setSubmitMessage("Thank you for your message. I will get back to you soon!")
     setFormState({ name: '', email: '', message: '' })
     setIsSubmitting(false)
   }
@@ -112,7 +112,7 @@ export default function App() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                   >
-                    A passionate full-stack developer dedicated to crafting elegant, efficient, and user-centric digital solutions. With a keen eye for detail and a love for clean code, I transform complex problems into intuitive and scalable applications.
+                    A 13 year old passionate full-stack developer dedicated to crafting efficient, and user-controlled digital solutions. With a keen eye for detail and a love for clean code, I transform complex problems into intuitive and scalable applications.
                   </motion.p>
                   <div className="flex space-x-4 mb-8">
                     {Object.keys(tabContent).map((tab, index) => (
@@ -160,10 +160,10 @@ export default function App() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                   >
-                    <img src="/placeholder.svg" alt="Prisum" width={400} height={400} className="rounded-lg shadow-lg mb-6" />
+                    <img src="https://rockethosting.vercel.app/static/p.png" alt="Prisum" width={400} height={400} className="rounded-lg shadow-lg mb-6" />
                     <div className="flex space-x-4 justify-center">
-                      <motion.a href="#" className="text-blue-400 hover:text-blue-300 transition-colors" whileHover={{ scale: 1.2 }}><FaGithub size={24} /></motion.a>
-                      <motion.a href="#" className="text-blue-400 hover:text-blue-300 transition-colors" whileHover={{ scale: 1.2 }}><FaTwitter size={24} /></motion.a>
+                      <motion.a href="https://github.com/PrisumDevolopes" className="text-blue-400 hover:text-blue-300 transition-colors" whileHover={{ scale: 1.2 }}><FaGithub size={24} /></motion.a>
+                      <motion.a href="x.com/PrisumDevelopes" className="text-blue-400 hover:text-blue-300 transition-colors" whileHover={{ scale: 1.2 }}><FaTwitter size={24} /></motion.a>
                     </div>
                   </motion.div>
                   <div>
@@ -174,7 +174,7 @@ export default function App() {
                       transition={{ duration: 0.8 }}
                       viewport={{ once: true }}
                     >
-                      Hi, I&apos;m Prisum, a passionate full-stack developer with over 5 years of experience in creating web and mobile applications. I specialize in React, Node.js, and cloud technologies, with a keen interest in AI and machine learning applications in web development.
+                      Hi, I&apos;m Prisum, a passionate full-stack developer with over 2 years of experience in creating web and mobile applications. I specialize in React, Node.js, and cloud technologies, with a keen interest in AI and machine learning applications in web development.
                     </motion.p>
                     <motion.p 
                       className="text-lg mb-6"
@@ -183,7 +183,7 @@ export default function App() {
                       transition={{ duration: 0.8, delay: 0.2 }}
                       viewport={{ once: true }}
                     >
-                      My journey in tech started when I built my first website at the age of 15. Since then, I&apos;ve been constantly learning and exploring new technologies to improve my skills and create better solutions. I&apos;m driven by the desire to solve complex problems and create intuitive, user-friendly applications that make a positive impact.
+                      My journey in tech started when I built my first website at the age of 10. Since then, I&apos;ve been constantly learning and exploring new technologies to improve my skills and create better solutions. I&apos;m driven by the desire to solve complex problems and create intuitive, user-friendly applications that make a positive impact.
                     </motion.p>
                     <motion.h3 
                       className="text-2xl font-bold mb-4"
@@ -201,7 +201,7 @@ export default function App() {
                       transition={{ duration: 0.8, delay: 0.6 }}
                       viewport={{ once: true }}
                     >
-                      <li>Front-end Development (React, Vue.js, Angular)</li>
+                      <li>Front-end Development (React, Vue.js, Angular, HTML)</li>
                       <li>Back-end Development (Node.js, Python, Ruby on Rails)</li>
                       <li>Database Management (MongoDB, PostgreSQL, MySQL)</li>
                       <li>Cloud Services (AWS, Google Cloud, Azure)</li>
@@ -225,9 +225,9 @@ export default function App() {
                 </motion.h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {[
-                    { title: "EcoTrack", description: "A sustainability app that helps users reduce their carbon footprint through personalized recommendations and community challenges.", image: "/placeholder.svg", tags: ["React Native", "Node.js", "MongoDB"] },
-                    { title: "CodeCollab", description: "Real-time collaborative coding platform with integrated video chat and version control, designed for remote pair programming.", image: "/placeholder.svg", tags: ["React", "Socket.io", "WebRTC"] },
-                    { title: "AI Content Assistant", description: "An AI-powered tool that helps content creators generate ideas, outlines, and drafts for articles and social media posts.", image: "/placeholder.svg", tags: ["Python", "Flask", "OpenAI API"] }
+                    { title: "Pagnini AI", description: "A large machine learning module that uses the module speech recognition to create a personalized AI assistant.", image: "https://rockethosting.vercel.app/static/p.png", tags: ["Python"] },
+                    { title: "Nutri Scan", description: "A food fact website that uses a database api and barcode scanner to retrieve food facts from your daily items.", image: "https://rockethosting.vercel.app/static/p.png", tags: ["HTML", "CSS", "JS"] },
+                    { title: "Prisums Portfolio", description: "A sleek modern UI for myself made in React using Framer Motion modules.", image: "https://rockethosting.vercel.app/static/p.png", tags: ["React", "Next.JS", "Framer Motion"] }
                   ].map((project, index) => (
                     <motion.div
                       key={index}
@@ -276,9 +276,9 @@ export default function App() {
                 <div className="space-y-8">
                   {[
                     
-                    { title: "The Future of Web Development: Trends to Watch in 2023", date: "July 15, 2023", excerpt: "Explore emerging technologies and methodologies that are shaping the future of web development...", tags: ["Web Development", "Trends"] },
-                    { title: "Optimizing React Applications for Performance", date: "July 1, 2023", excerpt: "Learn advanced techniques to boost the performance of your React applications...", tags: ["React", "Performance"] },
-                    { title: "Introduction to Serverless Architecture", date: "June 15, 2023", excerpt: "Discover the benefits and use cases of serverless architecture in modern application development...", tags: ["Serverless", "Cloud Computing"] }
+                    { title: "The Future of Web Development: Trends to Watch in 2024", date: "July 15, 2024", excerpt: "Explore emerging technologies and methodologies that are shaping the future of web development...", tags: ["Web Development", "Trends"] },
+                    { title: "Optimizing React Applications for Performance", date: "July 1, 2024", excerpt: "Learn advanced techniques to boost the performance of your React applications...", tags: ["React", "Performance"] },
+                    { title: "Introduction to Serverless Architecture", date: "June 15, 2024", excerpt: "Discover the benefits and use cases of serverless architecture in modern application development...", tags: ["Serverless", "Cloud Computing"] }
                   ].map((article, index) => (
                     <motion.div 
                       key={index} 
@@ -335,7 +335,7 @@ export default function App() {
                     <div className="space-y-4 mb-8">
                       <div className="flex items-center">
                         <span className="w-6 h-6 mr-2 text-blue-400">📧</span>
-                        <span>prisum@example.com</span>
+                        <span>prisum@rockethosting.xyz</span>
                       </div>
                       <div className="flex items-center">
                         <span className="w-6 h-6 mr-2 text-blue-400">📞</span>
@@ -343,7 +343,7 @@ export default function App() {
                       </div>
                       <div className="flex items-center">
                         <span className="w-6 h-6 mr-2 text-blue-400">📍</span>
-                        <span>San Francisco, CA</span>
+                        <span>Toronto, Canada</span>
                       </div>
                     </div>
                   </motion.div>
