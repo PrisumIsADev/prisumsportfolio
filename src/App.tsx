@@ -38,7 +38,7 @@ export default function App() {
   const tabContent = {
     'what-i-do': 'I specialize in building scalable web applications using modern technologies. My expertise includes front-end development with React and HTML, back-end development with Node.js and Python, and database management with MongoDB and PostgreSQL. I also have experience with cloud services like AWS and containerization with Docker.',
     'projects': 'My portfolio includes a diverse range of projects, from full-stack web applications to mobile apps and AI-powered tools. Check out my Projects section to see detailed case studies of my work, including technologies used and challenges overcome.',
-    'hire-me': "I&apos;m available for most work and open to small commissions. Whether you need a custom web application, a mobile app, I&apos;m here to help bring your ideas to life. Let&apos;s discuss how we can work together to achieve your goals."
+    'hire-me': "I am available for most work and open to small commissions. Whether you need a custom web application, a mobile app, Im here to help bring your ideas to life. Let&apos;s discuss how we can work together to achieve your goals."
   }
 
   const fadeInUp = {
