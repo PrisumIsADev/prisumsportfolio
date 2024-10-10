@@ -419,6 +419,7 @@ export default function Component() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
+            style={{ filter: 'blur(5px)' }}
           >
             <motion.div
               className="bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-full px-6 py-3 flex items-center space-x-6 shadow-lg"
